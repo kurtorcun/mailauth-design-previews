@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#121722">
+  <title>mailauth — dönen hero prototipleri</title>
+  <meta name="description" content="mailauth ana sayfası için üç etkileşimli hero tasarımı.">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="https://mailauth.app" aria-label="mailauth ana sayfa">
+        <img src="logo.png" width="34" height="34" alt="">
+        <span>mailauth</span>
+      </a>
+      <span class="prototype-tag">Ana sayfa tasarım çalışması</span>
+    </div>
+  </header>
+
+  <main>
+    <div class="variant-bar" aria-label="Tasarım seçimi">
+      <a href="?model=deck" data-model-link="deck"><strong>01</strong> Katmanlı dönüş</a>
+      <a href="?model=rail" data-model-link="rail"><strong>02</strong> Yatay akış</a>
+      <a href="?model=side" data-model-link="side"><strong>03</strong> Yan sahne</a>
+    </div>
+
+    <section class="hero" aria-label="Ana sayfa hero prototipi">
+      <div class="hero-copy">
+        <span class="eyebrow">E-POSTA TESLİMAT ANALİZİ</span>
+        <h1>E-postanın neden <em>ulaşmadığını</em> bulun.</h1>
+        <p>Header’ı, gönderen alan adını ve SMTP yanıtını inceleyin; sorunun kaynağını kanıtlarıyla görün.</p>
+        <div class="hero-actions">
+          <a class="primary-action" href="https://mailauth.app/app">Ücretsiz analiz et <span aria-hidden="true">→</span></a>
+          <a class="secondary-action" href="https://mailauth.app/tr/domain">Alan adını kontrol et <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="preview" id="preview">
+        <div class="preview-heading">
+          <span id="model-name">Katmanlı dönüş</span>
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>Dönen örnekler</span>
+        </div>
+        <div class="scene" id="scene" aria-label="Header, alan adı ve SMTP sonuç örnekleri"></div>
+        <div class="controls" aria-label="Önizleme kontrolleri">
+          <button class="arrow-button" id="previous" type="button" aria-label="Önceki örnek">←</button>
+          <div class="dots" id="dots"></div>
+          <button class="arrow-button" id="next" type="button" aria-label="Sonraki örnek">→</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="facts" aria-label="mailauth hakkında">
+      <span>✓ Mesaj tarayıcıda kalır</span>
+      <span>✓ Her koşulun kaynağı gösterilir</span>
+      <span>✓ Kayıt gerekmez</span>
+    </div>
+    <p class="prototype-note">Bu sayfa yalnızca etkileşimli tasarım prototipidir. Kartların üstüne gelince dönüş durur; kartların küçük hâli yalnızca kısa özet gösterir.</p>
+  </main>
+</body>
+</html>
